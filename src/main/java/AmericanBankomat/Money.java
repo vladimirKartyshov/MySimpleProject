@@ -6,15 +6,15 @@ public class Money {
     public Money(int amt){
         setAmt(amt);
     }
-    public int getAmt(){
+    public int getAmt() {
         return amt;
     }
     public void setAmt(int amt){
-        if (amt>0 && amt<=4000 && amt%Note.R10==0){
+        if (amt>0 && amt<=4000 && amt%Note.R1==0){
             this.amt = amt;
         }
         else {
-            throw new RuntimeException("Сумма денег должна быть не больше 4000 и кратная 10");
+            throw new RuntimeException("Сумма денег должна быть не больше 4000 и кратная 1");
 
         }
     }
